@@ -12,8 +12,8 @@ server.listen(8085, function() {
 
 // Create chat bot and listen to messages
 var connector = new builder.ChatConnector({
-  appId: process.env.MICROSOFT_APP_ID,
-  appPassword: process.env.MICROSOFT_APP_PASSWORD
+  appId: "95916871-988b-41b1-8c2e-9d7c7eb87833",
+  appPassword: "F!WR5RHFIiSQSGBx"
 });
 server.post('/api/messages', connector.listen());
 
